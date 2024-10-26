@@ -15,7 +15,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1500px;
-    height: 1000px;
+    max-width: 1500px;
+    height: 90%;
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
     
@@ -150,4 +151,48 @@ body{
 .button button:hover{
     background: #ababab;
     color: #fff;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .container .slide .item {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 10px;
+    }
+
+    .item .content {
+        left: 10px;
+        width: 90%;
+    }
+
+    .button {
+        width: 100%;
+        bottom: 10px;
+    }
+
+    .button button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .content .name {
+        font-size: 24px;
+    }
+
+    .content button {
+        padding: 8px 16px;
+    }
 }
